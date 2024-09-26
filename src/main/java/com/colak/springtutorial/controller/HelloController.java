@@ -1,4 +1,4 @@
-package com.colak.springlogbacktutorial.controller;
+package com.colak.springtutorial.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
