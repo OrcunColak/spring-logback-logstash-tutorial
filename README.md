@@ -1,7 +1,11 @@
 # Read Me First
 
-The following original idea is from  
-https://medium.com/@thomasjay200/spring-boot-json-logs-in-5-minutes-0f9b4c4ccd4d
+The following original idea is from
 
-This adds support for JSON encoding
+https://snowcloudbyte.medium.com/spring-boot-3-logback-and-logstash-integrated-with-elasticsearch-and-kibana-a184c46e5b8e
 
+This adds support for Kibana
+
+# Kibana
+
+http://localhost:5601 
