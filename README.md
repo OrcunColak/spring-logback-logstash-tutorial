@@ -6,6 +6,6 @@ https://snowcloudbyte.medium.com/spring-boot-3-logback-and-logstash-integrated-w
 
 This adds support for Kibana
 
-# Kibana
+# Elasticsearch
 
 http://localhost:5601 

@@ -27,7 +27,7 @@ services:
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
     ports:
-      - 5601:5601
+      - "5601:5601"
     networks:
       - my-network
   
@@ -37,8 +37,8 @@ services:
     volumes:
       - ./logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
     ports:
-      - 5000:5000
-      - 9600:9600
+      - "5000:5000"
+      - "9600:9600"
     networks:
       - my-network
     depends_on:
