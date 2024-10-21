@@ -15,7 +15,7 @@
     <name>spring-logback-logstash-tutorial</name>
     <description>Demo project for Spring Boot</description>
     <properties>
-        <java.version>21</java.version>
+        <java.version>23</java.version>
     </properties>
 
     <build>
