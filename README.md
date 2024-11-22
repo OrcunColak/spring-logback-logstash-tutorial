@@ -7,6 +7,9 @@ https://snowcloudbyte.medium.com/spring-boot-3-logback-and-logstash-integrated-w
 This project demonstrates that logs collected by Logstash are sent to Elesticsearch. Then we can use Kibana to search
 for logs visually
 
+There is another example here that makes logstash read log files
+https://medium.com/@shala.p02/centralized-logging-using-elk-as-a-docker-container-for-microservices-in-just-4-steps-4f4cdf278712
+
 # What is Logstash
 
 A log pipeline tool that accepts inputs from various sources, executes different transformations, and exports the data
