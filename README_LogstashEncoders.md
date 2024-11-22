@@ -1,35 +1,12 @@
-# Read me
-
-The following original idea is from
-
-https://snowcloudbyte.medium.com/spring-boot-3-logback-and-logstash-integrated-with-elasticsearch-and-kibana-a184c46e5b8e
-
-This project demonstrates that logs collected by Logstash are sent to Elesticsearch. Then we can use Kibana to search
-for logs visually
-
-# What is Logstash
-
-A log pipeline tool that accepts inputs from various sources, executes different transformations, and exports the data
-to various targets such as Elasticsearch.
-
-# What is Kibana
-
-Kibana is an open-source data visualization and exploration tool designed for use with Elasticsearch.
-Kibana provides a user-friendly interface for exploring, analyzing, and visualizing data(logs) stored in Elasticsearch
-indices.
-
-# Elasticsearch
-
-http://localhost:5601
-
-# LogstashEncoder
+# Encoders that can be used with Logstash
 
 This third party library was intended to use with logstash, but is now used quite commonly as standard JSON formatter.
 
 The original idea is from  
 https://medium.com/engineered-publicis-sapient/consistent-logging-with-logstash-for-microservices-sharing-a-kubernetes-cluster-7c1aee7ec42f
 
-**LogstashEncoder**
+# LogstashEncoder
+
 We can use like this
 
 ```
@@ -38,7 +15,16 @@ We can use like this
 </appender>
 ```
 
-**logback JsonEncoder**
+# LoggingEventCompositeJsonEncoder
+
+We can customize the format using LoggingEventCompositeJsonEncoder as the encoder instead of LogstashEncoder, as it
+provides greater flexibility in the JSON format.
+
+LoggingEventCompositeJsonEncoder is composed of one or more JSON providers that contribute to the JSON output. No
+providers are configured by default in the composite encoders — we must add the ones we want.
+
+# Logback JsonEncoder
+
 If you prefer not to use a third party library, you can also use JsonEncode. We can use like this
 
 ```
@@ -47,7 +33,8 @@ If you prefer not to use a third party library, you can also use JsonEncode. We 
 </appender>
 ```
 
-**logback JsonLayout**
+# Logback JsonLayout
+
 If you prefer not to use a third party library, you can also use JsonEncode. We can use like this
 
 ```
@@ -81,12 +68,3 @@ requires these dependencies
   <version>2.9.0</version>
 </dependency>
 ```
-
-# LoggingEventCompositeJsonEncoder
-
-We can customize the format using LoggingEventCompositeJsonEncoder as the encoder instead of LogstashEncoder, as it
-provides greater flexibility in the JSON format.
-
-LoggingEventCompositeJsonEncoder is composed of one or more JSON providers that contribute to the JSON output. No
-providers are configured by default in the composite encoders — we must add the ones we want.
-
